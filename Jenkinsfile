@@ -10,7 +10,8 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/aakash-rio/repo-pipeline.git'
+                 git branch: 'main',
+                url: 'https://github.com/aakash-rio/repo-pipeline.git'
             }
         }
 
